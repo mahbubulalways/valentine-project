@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valentine project </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-[80%] mx-auto pt-4 ">
+        <h1 class="text-4xl md:text-5xl font-semibold text-center">Valentine <span class="text-red-700">Project</span></h1>
+    </header>
+    <main>
+        <section class=" grid grid-cols-1  md:grid-cols-2 mt-14">
+
+       <div>
+        <div class="grid grid-cols-2  gap-4 w-[80%] mx-auto ">
+            <!-- kitkat -->
+         <div class=" shadow-xl text-center bg-blue-100 rounded-md ">
+          <img class=" p-2" src="images/kitkat.webp" alt="">
+          <h1 class="text-sm px-2 md:text-2xl font-semibold">KitKat Chocolate </h1>
+          <h1 class= " text-sm md:text-2xl font-bold ">price:   <span class="text-red-700" id="kitkat">200</span> tk</h1>
+          <input id="chocolate"  class="w-2/3 mt-2  px-0.5 rounded-sm" type="text" placeholder="Quantity" >
+          <div class="pb-3 pt-2">
+          <button id="chocolate-btn" class="bg-red-500 hover:bg-red-700 px-1 md:px-3 md:py-0.5  rounded-md  text-yellow-50">Buy now</button>
+             </div>
+        </div>
+                     <!-- rose -->
+         <div class=" shadow-xl text-center bg-blue-100 rounded-md ">
+            <img  class="p-2" src="images/rose.jpg" alt="">
+          <h1 class="text-sm px-2 md:text-2xl font-semibold">Rose </h1>
+          <h1 class= " text-sm md:text-2xl font-bold ">price:   <span class="text-red-700" id="rose-price">150</span> tk</h1>
+          <input id="rose-input" class="w-2/3 mt-2  px-0.5 rounded-sm" type="text" placeholder="Quantity">
+          <div class="pb-3 pt-2">
+          <button id="rose-btn" class="bg-red-500 hover:bg-red-700 px-1 md:px-3 md:py-0.5  rounded-md  text-yellow-50">Buy now</button>
+             </div>
+        </div>
+        <!-- teddy -->
+         <div class=" shadow-xl text-center bg-blue-100 rounded-md ">
+            <img  class="p-2" src="images/tedy.webp" alt="">
+          <h1 class="text-sm px-2 md:text-2xl font-semibold">Teddy</h1>
+          <h1 class= " text-sm md:text-2xl font-bold ">price:   <span class="text-red-700" id="teddy-price">1000</span> tk</h1>
+          <input id="teddy-input" class="w-2/3 mt-2  px-0.5 rounded-sm" type="text" placeholder="Quantity">
+          <div class="pb-3 pt-2">
+          <button id="teddy-btn" class="bg-red-500 hover:bg-red-700 px-1 md:px-3 md:py-0.5  rounded-md  text-yellow-50">Buy now</button>
+             </div>
+        </div>
+             <!--  Diary-->
+         <div class=" shadow-xl text-center bg-blue-100 rounded-md ">
+            <img  class="p-2"src="images/diary.jpg" alt="">
+          <h1 class="text-sm px-2 md:text-2xl font-semibold">Diary </h1>
+          <h1 class= " text-sm md:text-2xl font-bold ">price:   <span class="text-red-700" id="diary-price">500</span> tk</h1>
+          <input id="diary-input" class="w-2/3 mt-2  px-0.5 rounded-sm" type="text" placeholder="Quantity">
+          <div class="pb-3 pt-2">
+          <button id="diary-btn" class="bg-red-500 hover:bg-red-700 px-1 md:px-3 md:py-0.5  rounded-md  text-yellow-50">Buy now</button>
+             </div>
+        </div>
+        </div>
+       </div>
+
+          <div  class="gap-4 w-[80%] mx-auto shadow-2xl rounded-md text-center p-3 space-y-5 bg-red-50 mt-16 md:mt-0">
+          <h1 class=" text-2xl md:text-3xl  font-semibold border-b-2 border-black pb-2">Chocolate amount <br><span class="text-red-700" id="chocolate-amount">00</span> tk</h1>
+          <h1 class="text-2xl md:text-3xl  font-semibold border-b-2 border-black pb-2">Rose amount<br><span class="text-red-700" id="rose-amount">00</span> tk</h1>
+          <h1 class="text-2xl md:text-3xl  font-semibold border-b-2 border-black pb-2">Teddy amount <br><span class="text-red-700" id="teddy-amount">00</span> tk</h1>
+          <h1 class="text-2xl md:text-3xl  font-semibold border-b-2 border-black pb-2" >Diary amount <br><span class="text-red-700" id="dairy-amount">00</span> tk</h1>
+          <div class="bg-yellow-200 pb-2">
+            <h1 class="text-2xl md:text-3xl  font-semibold p-3 ">Total amount <br><span class="text-red-700" id="total-amount">00</span> tk</h1>
+          <button id="total-btn" class="bg-red-500 hover:bg-red-700 px-1 md:px-3 md:py-0.5  rounded-md  text-yellow-50">Get total</button>
+          </div>
+           <div>
+            <h1 class="text-xl md:text-2xl font-semibold bg-indigo-100 p-3">Use Promo Code for 10% Discount</h1>
+            <input id="discount-input" class="mt-5 w-2/3 px-3 py-1 md:py-2 " type="text" placeholder="type 1001 for discount">
+            <button id="discount-btn" class="bg-red-500 hover:bg-red-700 px-5 md:py-2 py-1  rounded-md  text-yellow-50">Apply</button>
+           </div>
+
+           <h1 class=" text-2xl md:text-3xl  font-semibold border-b-2 border-black pb-2">After Discount  amount <br><span class="text-red-700"  id="last-amount">00</span> tk</h1>
+
+        </div>
+
+ </section>
+    </main>
+    
+   <script src="js/utilities.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
